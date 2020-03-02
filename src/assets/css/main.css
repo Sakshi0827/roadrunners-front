@@ -12256,8 +12256,8 @@ Animation example, for spinners
 
 @font-face {
 	font-family: 'FontAwesome';
-	src: url('/../../fonts/fontawesome-webfont.eot?v=4.7.0');
-	src: url('/../../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('/../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('/../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('/../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('/../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+	src: url('../../fonts/fontawesome-webfont.eot?v=4.7.0');
+	src: url('../../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -16048,7 +16048,7 @@ h2._heading{
 }
 
 .users-section {
-	background-image: url("/../images/team_bg.jpg");
+	background-image: url("../images/team_bg.jpg");
 }
 
 .users-section.s-overlay.ds:before {
@@ -16085,7 +16085,7 @@ h2._heading{
 }
 
 .service-section .image_cover {
-	background-image: url(/../images/about_section_bg_left.png);
+	background-image: url(../images/about_section_bg_left.png);
 	background-position-x: 77%;
 	background-position-y: 100%;
 	background-repeat: no-repeat;
@@ -17246,7 +17246,7 @@ td .media-body {
 }
 
 .embed-placeholder:after {
-	background: url(/../images/play.png) no-repeat center/contain;
+	background: url(../images/play.png) no-repeat center/contain;
 	content: "";
 	height: 42px;
 	left: 50%;
@@ -17649,7 +17649,7 @@ progressbar*/
 
 .owl-carousel .owl-video-play-icon {
 	-webkit-backface-visibility: hidden;
-	background: url("/../img/owl.video.play.png") no-repeat;
+	background: url("../img/owl.video.play.png") no-repeat;
 	cursor: pointer;
 	height: 80px;
 	left: 50%;
@@ -18583,7 +18583,7 @@ html[xmlns] .slides {
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-	background: url(/../img/photoswipe/default-skin.png) 0 0 no-repeat;
+	background: url(../img/photoswipe/default-skin.png) 0 0 no-repeat;
 	background-size: 264px 88px;
 	height: 44px;
 	width: 44px;
@@ -18597,7 +18597,7 @@ html[xmlns] .slides {
 	.pswp--svg .pswp__button,
 	.pswp--svg .pswp__button--arrow--left:before,
 	.pswp--svg .pswp__button--arrow--right:before {
-		background-image: url(/../img/photoswipe/default-skin.svg);
+		background-image: url(../img/photoswipe/default-skin.svg);
 	}
 	.pswp--svg .pswp__button--arrow--left,
 	.pswp--svg .pswp__button--arrow--right {
@@ -18915,7 +18915,7 @@ a.pswp__share--download:hover {
 
 .pswp__preloader--active .pswp__preloader__icn {
 	/* We use .gif in browsers that don't support CSS animation */
-	background: url(/../img/photoswipe/preloader.gif) 0 0 no-repeat;
+	background: url(../img/photoswipe/preloader.gif) 0 0 no-repeat;
 }
 
 .pswp--css_animation .pswp__preloader--active {
@@ -23612,11 +23612,11 @@ img {
 }
 
 .texture-background {
-	background-image: url(/../img/background-texture-cover.jpg);
+	background-image: url(../img/background-texture-cover.jpg);
 }
 
 .pattern-background:before {
-	background-image: url(/../img/patterns/pattern12.png);
+	background-image: url(../img/patterns/pattern12.png);
 }
 
 @media (min-width: 768px) {
@@ -23936,7 +23936,7 @@ img {
 }
 
 .preloader_image {
-	background: url(/../img/preloader-img.png) no-repeat 50% 50% transparent;
+	background: url(../img/preloader-img.png) no-repeat 50% 50% transparent;
 	height: 256px;
 	left: 50%;
 	margin: -128px 0 0 -128px;
@@ -23988,47 +23988,47 @@ body.boxed {
 }
 
 .pattern1 {
-	background-image: url(/../img/patterns/pattern1.png);
+	background-image: url(../img/patterns/pattern1.png);
 }
 
 .pattern2 {
-	background-image: url(/../img/patterns/pattern2.png);
+	background-image: url(../img/patterns/pattern2.png);
 }
 
 .pattern3 {
-	background-image: url(/../img/patterns/pattern3.png);
+	background-image: url(../img/patterns/pattern3.png);
 }
 
 .pattern4 {
-	background-image: url(/../img/patterns/pattern4.png);
+	background-image: url(../img/patterns/pattern4.png);
 }
 
 .pattern5 {
-	background-image: url(/../img/patterns/pattern5.png);
+	background-image: url(../img/patterns/pattern5.png);
 }
 
 .pattern6 {
-	background-image: url(/../img/patterns/pattern6.png);
+	background-image: url(../img/patterns/pattern6.png);
 }
 
 .pattern7 {
-	background-image: url(/../img/patterns/pattern7.png);
+	background-image: url(../img/patterns/pattern7.png);
 }
 
 .pattern8 {
-	background-image: url(/../img/patterns/pattern8.png);
+	background-image: url(../img/patterns/pattern8.png);
 }
 
 .pattern9 {
-	background-image: url(/../img/patterns/pattern9.png);
+	background-image: url(../img/patterns/pattern9.png);
 }
 
 .pattern10 {
-	background-image: url(/../img/patterns/pattern10.png);
+	background-image: url(../img/patterns/pattern10.png);
 }
 
 .pattern11 {
-	background-image: url(/../img/patterns/pattern11.png);
+	background-image: url(../img/patterns/pattern11.png);
 }
 
 .boxed .container {
@@ -24064,19 +24064,19 @@ body.boxed {
 /*common background sections*/
 
 .s-map-dark {
-	background-image: url("/../img/parallax/map-dark.jpg");
+	background-image: url("../img/parallax/map-dark.jpg");
 }
 
 .s-map-light {
-	background-image: url("/../img/parallax/map-light.jpg");
+	background-image: url("../img/parallax/map-light.jpg");
 }
 
 .s-light-abstract {
-	background-image: url("/../img/parallax/light-abstract.jpg");
+	background-image: url("../img/parallax/light-abstract.jpg");
 }
 
 .s-light-wood {
-	background-image: url("/../img/parallax/light-wood.jpg");
+	background-image: url("../img/parallax/light-wood.jpg");
 }
 
 
@@ -34051,7 +34051,7 @@ a.logo.flex-column.text-center {
 
 @media (min-width: 1200px) {
 	#search_modal .widget:before {
-		background: url("/../images/logo.png") no-repeat 0 0;
+		background: url("../images/logo.png") no-repeat 0 0;
 		content: "";
 		height: 100px;
 		opacity: 0.2;
@@ -36294,7 +36294,7 @@ h4.entry-title {
 }
 
 .format-video .photoswipe-link::after {
-	background: url(/../images/play.png) no-repeat center/contain;
+	background: url(../images/play.png) no-repeat center/contain;
 	content: "";
 	height: 42px;
 	left: 50%;
@@ -36523,7 +36523,7 @@ img.absolute_image {
 }
 
 .header_absolute.cover-background {
-	background-image: url("/../images/header_parallax.jpg");
+	background-image: url("../images/header_parallax.jpg");
 }
 
 .header_absolute.s-overlay.ds:before {
@@ -36535,7 +36535,7 @@ img.absolute_image {
 }
 
 .faq-section-left {
-	background: url("/../images/gallery/15.jpg") no-repeat center/cover;
+	background: url("../images/gallery/15.jpg") no-repeat center/cover;
 	height: 100%;
 	position: relative;
 }
@@ -36571,7 +36571,7 @@ img.absolute_image {
 }
 
 .page_title.s-parallax {
-	background-image: url("/../images/header_parallax.jpg");
+	background-image: url("../images/header_parallax.jpg");
 }
 
 .page_title.s-overlay.ds:before {
@@ -36639,7 +36639,7 @@ img.absolute_image {
 }
 
 .page_404 {
-	background-image: url("/../images/404.jpg");
+	background-image: url("../images/404.jpg");
 	background-position: right;
 	background-repeat: no-repeat;
 }
@@ -36709,7 +36709,7 @@ section .section-heading .back {
 }
 
 .about-section .image_cover {
-	background-image: url("/../images/about_section_bg_right.jpg");
+	background-image: url("../images/about_section_bg_right.jpg");
 	background-position-x: 30%;
 	background-position-y: 100%;
 	background-repeat: no-repeat;
@@ -36793,7 +36793,7 @@ section .section-heading .back {
 }
 
 .call-section {
-	background-image: url("/../images/consultation_bg.jpg");
+	background-image: url("../images/consultation_bg.jpg");
 }
 
 .call-section .wrap {
@@ -37042,7 +37042,7 @@ section .section-heading .back {
 }
 
 .testimonials-section {
-	background-image: url("/../images/testimonials_bg.jpg");
+	background-image: url("../images/testimonials_bg.jpg");
 }
 
 .testimonials-section.s-overlay.ds:before {
@@ -37090,7 +37090,7 @@ section .section-heading .back {
 }
 
 .coming-soon {
-	background-image: url("/../images/404.jpg");
+	background-image: url("../images/404.jpg");
 }
 
 .coming-soon .widget_mailchimp form {
@@ -37144,7 +37144,7 @@ section .section-heading .back {
 }
 
 .before-after-section {
-	background: url("/../images/after-before-bg.jpg") no-repeat center/cover;
+	background: url("../images/after-before-bg.jpg") no-repeat center/cover;
 }
 
 .before-after-section .bottom-subtitle {
@@ -37231,7 +37231,7 @@ section .section-heading .back {
 }
 
 .page_footer.s-parallax {
-	background-image: url("/../images/footer_parallax.jpg");
+	background-image: url("../images/footer_parallax.jpg");
 }
 
 .page_footer.s-overlay.ds:before {
@@ -37287,7 +37287,7 @@ section .section-heading .back {
 
 .page_copyright.cover-background,
 .page_copyright.s-parallax {
-	background-image: url("/../images/breadcrumbs.jpg");
+	background-image: url("../images/breadcrumbs.jpg");
 }
 
 .page_copyright p {
@@ -39951,7 +39951,7 @@ max-width: 20%;
 	opacity: 0;
 }
 
-/* .searchbttn {} */
+.searchbttn {}
 
 .searchbttn input {
 	margin: 0 !important;
@@ -40355,8 +40355,8 @@ margin-top: 10px;
 	border-radius: 4px;
 }
 .eventDetails a.btn:focus, .eventDetails a.btn:hover, 
-.mc4wp-form-fields input[type="submit"]:hover,
-.mc4wp-form-fields input[type="submit"]:focus
+.mc4wp-form-fields input[type=""submit]:hover,
+.mc4wp-form-fields input[type=""submit]:focus
 {
 	background-color: #952225 !important;
 	border:0 !important;
@@ -41235,7 +41235,7 @@ top: 91px;
 
 
 #pricing{
-	background-image: url('/../images/bgevent.jpg');
+	background-image: url('../images/bgevent.jpg');
 	background-size: cover;
 	padding:50px;
 }
@@ -41266,18 +41266,18 @@ background-repeat: no-repeat;
 }
 
 .row .col-lg-6:first-child .price-title:before{
-	background-image: url('/../images/P1.png');
+	background-image: url('../images/P1.png');
 }
 .row .col-lg-6:nth-of-type(2) .price-title:before{
-	background-image: url('/../images/p2.png');
+	background-image: url('../images/p2.png');
 	background-size: 70px;
 }
 .row .col-lg-6:nth-of-type(3)  .price-title:before{
-	background-image: url('/../images/P3.png');
+	background-image: url('../images/P3.png');
 
 }
 .row .col-lg-6:last-child .price-title:before{
-	background-image: url('/../images/p4.png');
+	background-image: url('../images/p4.png');
 	top: -20px;
 }
 
@@ -41590,13 +41590,15 @@ button.submenu-expand{
 }
 
 .sub-menu a{
-	background-color: transparent;
-	color: #000 !important;
-	text-align: center;
-	border-radius: 60px;
-	position: relative;
-	left: 0px;
-	top: 0px;
+	background:
+#transparent;
+color:
+#000 !important;
+text-align: center;
+border-radius: 60px;
+position: relative;
+left: 0px;
+top: 0px;
 }
 
 .header_menu > li .mega-menu li, .header_menu li > ul li {
@@ -41694,7 +41696,7 @@ background-image: url("https://www.transparenttextures.com/patterns/climpek.png"
 
 
 .lotus10k{
-	background-image: url('/../images/website-bg.png') !important;
+	background-image: url('../images/website-bg.png') !important;
 	background-size: cover !important;
 }
 
