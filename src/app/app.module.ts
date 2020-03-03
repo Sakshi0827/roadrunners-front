@@ -7,6 +7,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
   import { from } from 'rxjs';
 import { HomeModule } from './home/home.module';
+import { IndiaEventModule } from './india-event/india-event.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeModule } from './home/home.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    IndiaEventModule
   ],
   providers: [],
   bootstrap: [AppComponent]
