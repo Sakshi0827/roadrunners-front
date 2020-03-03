@@ -8,6 +8,7 @@ import { FooterComponent } from './shared/footer/footer.component';
   import { from } from 'rxjs';
 import { HomeModule } from './home/home.module';
 import { IndiaEventModule } from './india-event/india-event.module';
+import { RoadrunnersModule } from './roadrunners/roadrunners.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IndiaEventModule } from './india-event/india-event.module';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    IndiaEventModule
+    IndiaEventModule,
+    RoadrunnersModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,6 +15,10 @@ const routes: Routes = [
   {
     path: 'india-event',
     loadChildren: './india-event/india-event.module#IndiaEventModule'
+  },
+  {
+    path: 'roadrunners',
+    loadChildren: './roadrunners/roadrunners.module#RoadrunnersModule'
   }
 ];
 
