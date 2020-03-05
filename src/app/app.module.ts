@@ -9,6 +9,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeModule } from './home/home.module';
 import { IndiaEventModule } from './india-event/india-event.module';
 import { RoadrunnersModule } from './roadrunners/roadrunners.module';
+import { RegisterModule } from './register/register.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { RoadrunnersModule } from './roadrunners/roadrunners.module';
     AppRoutingModule,
     HomeModule,
     IndiaEventModule,
-    RoadrunnersModule
+    RoadrunnersModule,
+    RegisterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

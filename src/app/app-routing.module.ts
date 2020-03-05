@@ -19,6 +19,10 @@ const routes: Routes = [
   {
     path: 'roadrunners',
     loadChildren: './roadrunners/roadrunners.module#RoadrunnersModule'
+  },
+  {
+    path: 'register',
+    loadChildren: './register/register.module#RegisterModule'
   }
 ];
 
