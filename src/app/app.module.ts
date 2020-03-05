@@ -14,7 +14,7 @@ import { RoadrunnersModule } from './roadrunners/roadrunners.module';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
