@@ -19,7 +19,13 @@
 							<nav class="top-nav">
 								<div class="menu-main-menu-container">
 									<ul id="menu-main-menu" class="nav header_menu">
-										<li><a routerLink ="/home">Home</a></li>
+										<li>
+											<a 
+												routerLink ="/home"
+												routerLinkActive="active">
+												Home
+											</a>
+										</li>
 										<li><a href="#">RoadRunner Events</a>
 											<ul class="sub-menu">
 												<li id="menu-item--1" class="mobile-parent-nav-menu-item menu-item--1">
@@ -30,8 +36,8 @@
 												<li><a href="#">FitZista Challenge</a></li>
 											</ul>
 										</li>
-										<li><a href="#">India Events</a></li>
-										<li><a href="#">#RoadRunners</a></li>
+										<li><a routerLink ="/india-event" routerLinkActive="active">India Event</a></li>
+										<li><a routerLink ="/roadrunners" routerLinkActive="active">#RoadRunners</a></li>
 										<li><a href="#">Forum</a></li>
 										<li><a href="#">Blog</a></li>
 										<li><a href="#">Register/Login</a></li>

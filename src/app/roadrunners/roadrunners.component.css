@@ -1,0 +1,46 @@
+/* roadrunners list */
+.home_section{
+	padding: 40px 0;
+}
+.home_section .perform_list li h4{
+	color: #fff !important;
+}
+.home_section .perform_list1 h4{
+	color: #F00 !important; 
+}
+
+section.top_perform {
+    background-color: #282046;
+    color: #fff;
+}
+section.top_perform1 {
+    background-color: #FFF;
+    color: #000;
+}
+
+
+.perform_list_inner ul{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+
+
+.perform_list_inner li {
+    width: 125px;
+    margin-bottom: 10px;
+	display:inline-block;
+}
+
+.perform_list_inner li h4 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 15px;
+	color: #000;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	cursor:default;
+	margin-bottom: 10px;
+}

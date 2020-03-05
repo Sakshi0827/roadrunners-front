@@ -1970,7 +1970,7 @@ pre code {
 }
 
 select.form-control:not([size]):not([multiple]) {
-	/*height: calc(2.25rem + 2px)*/
+	height: calc(2.25rem + 2px)
 }
 
 select.form-control:focus::-ms-value {
@@ -2500,14 +2500,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
 	color: #fff;
-	background-color: #292147 ;
-	border-color: #292147 
+	background-color: #007bff;
+	border-color: #007bff
 }
 
 .btn-primary:hover {
 	color: #fff;
-	background-color: #292147 ;
-	border-color: #292147;
+	background-color: #0069d9;
+	border-color: #0062cc
 }
 
 .btn-primary.focus,
@@ -16334,10 +16334,10 @@ input[type="number"],
 textarea,
 select,
 .form-control {
-	background-color: #FFF;
-	border: 1px solid #a8a8a8;
+	background-color: #f0f0f0;
+	border: none;
 	border-radius: 0;
-	color: #333333;
+	color: #585149;
 	font-size: 14px;
 	font-weight: 500;
 	height: 50px;
@@ -16347,10 +16347,6 @@ select,
 	padding-right: 30px;
 	padding-top: 11px;
 	width: 100%;
-	height: 40px;
-	border-radius: 2px;
-	padding: 0 12px;
-	text-decoration: none;
 }
 
 input[type="text"]:focus,
@@ -16373,7 +16369,7 @@ select:focus,
 select:active,
 .form-control:focus,
 .form-control:active {
-	background-color: #FFF;
+	background-color: #f0f0f0;
 	color: #585149;
 }
 
@@ -16415,7 +16411,7 @@ select:active,
 
 select {
 	border: none;
-
+	font-style: italic;
 	font-weight: 600;
 	height: 50px;
 	text-transform: uppercase;
@@ -16427,7 +16423,7 @@ select {
 }
 
 .form-group .select_container::before {
-	background: #FFF;
+	background: #f0f0f0;
 }
 
 .form-group .select_container::after {
@@ -16554,7 +16550,7 @@ select option,
 
 .form-control,
 .form-control:focus {
-	background-color: #FFF;
+	background-color: #f0f0f0;
 	box-shadow: none;
 	color: #585149;
 }
@@ -34668,7 +34664,7 @@ body.active-side-header.slide-right .page_header_side {
 	width: 50%;
 	z-index: 1;
 }
- 
+
 .page_slider .flexslider.slider-shadow:after,
 .page_slider .static-slide.slider-shadow:after {
 	left: auto;
