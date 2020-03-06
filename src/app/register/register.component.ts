@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -7,16 +7,42 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  @ViewChild('f', {static:false}) signupForm: NgForm;
+  // templatedriven approach
+  // @ViewChild('f', {static:false}) signupForm: NgForm;
+  // defaultUsername = "abc";
+  // constructor() { }
 
-  constructor() { }
+  // ngOnInit() {
+  // }
 
+  // onSubmit(){
+  //   console.log(this.signupForm);
+  // }
+
+
+  // reactive approach
+
+  signupForm: FormGroup;
+  constructor() {}
   ngOnInit() {
+    this.signupForm = new FormGroup({
+      'firstname' : new FormControl(null, Validators.required),
+      'lastname': new FormControl(null),
+      'username': new FormControl(null),
+      'email' : new FormControl(null, [Validators.required, Validators.email]),
+      'password': new FormControl(null),
+      'dob': new FormControl(null),
+      'gender': new FormControl('female'),
+      'mobile': new FormControl(null),
+      'city': new FormControl(null),
+      'state': new FormControl(null),
+      'country': new FormControl(null),
+      'pincode': new FormControl(null),
+      'fitnessgroup': new FormControl(null),
+      'company': new FormControl(null),
+    });
   }
 
-  // onSubmit(form: NgForm) {
-  //   console.log(form);
-  // }
   onSubmit(){
     console.log(this.signupForm);
   }
