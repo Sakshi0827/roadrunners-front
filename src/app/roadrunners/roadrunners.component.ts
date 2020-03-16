@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./roadrunners.component.css']
 })
 export class RoadrunnersComponent implements OnInit {
-
+  users: any;
   constructor() { }
 
   ngOnInit() {

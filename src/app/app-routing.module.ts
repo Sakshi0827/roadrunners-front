@@ -17,12 +17,20 @@ const routes: Routes = [
     loadChildren: './india-event/india-event.module#IndiaEventModule'
   },
   {
+    path: 'blogs',
+    loadChildren: './blogs/blogs.module#BlogsModule'
+  },
+  {
     path: 'roadrunners',
     loadChildren: './roadrunners/roadrunners.module#RoadrunnersModule'
   },
   {
     path: 'register',
     loadChildren: './register/register.module#RegisterModule'
+  },
+  {
+    path: 'login',
+    loadChildren: './login/login.module#LoginModule'
   }
 ];
 

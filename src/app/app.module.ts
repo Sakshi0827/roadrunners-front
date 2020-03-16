@@ -11,6 +11,8 @@ import { IndiaEventModule } from './india-event/india-event.module';
 import { RoadrunnersModule } from './roadrunners/roadrunners.module';
 import { RegisterModule } from './register/register.module';
 import { FormsModule } from '@angular/forms';
+import { LoginModule } from './login/login.module';
+import { BlogsModule } from './blogs/blogs.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { FormsModule } from '@angular/forms';
     IndiaEventModule,
     RoadrunnersModule,
     RegisterModule,
+    LoginModule,
+    BlogsModule,
     FormsModule
   ],
   providers: [],
