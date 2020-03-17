@@ -40515,6 +40515,13 @@ body .um .um-form .um-field-area input{
     font-weight: 600;
     margin-bottom: 0;
 }
+label.um-field-radio{
+	text-align: left;
+}
+span.um-field-radio-option{
+	display: inline-block;
+	width: auto;
+}
 .um-row._um_row_1{
 	margin-bottom: 10px !important;
 }
