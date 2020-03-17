@@ -1,4 +1,3 @@
-<p>roadrunners-profile works!</p>
 <section class="page_title">
     <div class="container">
         <div class="row">
@@ -6,7 +5,7 @@
             <div class="col-md-12 text-center">
                 <ul class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">Login</li>
+                    <li class="breadcrumb-item active">{{ athleteData.data[0].first_name }} {{ athleteData.data[0].last_name }}</li>
                 </ul>
             </div>
 
@@ -28,7 +27,7 @@
                     <img src="images/profile-pic1.jpg" />
                 </div>
                 <h2 class="ath_name">
-                    Anita Gera </h2>
+                    {{ athleteData.data[0].first_name }} {{ athleteData.data[0].last_name }} </h2>
             </div>
             <div class="ath_full">
                 <div class="ath_left">

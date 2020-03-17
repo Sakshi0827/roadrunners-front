@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
@@ -8,5 +8,11 @@ export class UserService {
 
     fetchUsers() {
         return this.http.get('http://localhost:3000/user-list');
+    }
+    fetchAthlete(id: string) {
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        headers.append('projectid', id);
+        return this.http.get('http://localhost:3000/user'+id)
     }
 }
