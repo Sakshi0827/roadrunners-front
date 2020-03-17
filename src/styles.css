@@ -7,7 +7,7 @@
  @charset "utf-8";
  @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700");
  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
- 
+
 
 :root {
 	--blue: #007bff;
@@ -15335,12 +15335,12 @@ Background color for dark muted section (.ds.ms): #0a0d1b
 Border colors for elements in light section (and .bordered elements): #d5d3cf, rgba(0, 0, 0, 0.1)
 Background color for elements in light section (.hero-bg): #f0f0f0
 
-Dark section (.ds) colors: 
+Dark section (.ds) colors:
 Text color in dark section: #3a3630
 Border colors for elements in dark section: #3f4455
 Background color for elements in dark section (.hero-bg): #222739
 
-Color section (.cs) colors: 
+Color section (.cs) colors:
 Background color for elements in color section: rgba(255, 255, 255, 0.1)
 Border color for elements in color section: rgba(255, 255, 255, 0.15)
 
@@ -15936,7 +15936,7 @@ li.user_menu {
 }
 .ath_right {
     width: 100% !important;
-   
+
 }
 .ath_side_block span{
 	padding-right: 10px !important;
@@ -15987,7 +15987,7 @@ h2._heading{
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-	
+
 	.submenu-expand{
 		display: none;
 	}
@@ -18536,7 +18536,7 @@ html[xmlns] .slides {
 
 
 /*
-	
+
 	1. Buttons
 
  */
@@ -18846,7 +18846,7 @@ a.pswp__share--download:hover {
 
 
 /*
-	
+
 	4. Caption
 
  */
@@ -19037,7 +19037,7 @@ a.pswp__share--download:hover {
 
 
 /*
-	
+
 	6. Additional styles
 
  */
@@ -19202,8 +19202,8 @@ a.pswp__share--download:hover {
 }
 
 
-/* 
-** Time Table 
+/*
+** Time Table
 */
 
 #timetable span {
@@ -19297,7 +19297,7 @@ a.pswp__share--download:hover {
 }
 
 
-/* 
+/*
 ** toTop
 */
 
@@ -34405,7 +34405,7 @@ body.active-side-header.slide-right .page_header_side {
 }
 
 
-/* 
+/*
 ** Intro Section Styles
 */
 
@@ -36384,7 +36384,7 @@ h4.entry-title {
 }
 
 
-/* 
+/*
 ** Template Specific Styles
 */
 
@@ -38244,6 +38244,7 @@ body .um-row._um_row_1{margin-bottom: 0 !important;}
 #um-submit-btn {
 	background: #292147 !important;
 	border-radius: 0 !important;
+  width: -webkit-fill-available;
 }
 
 .um-button.um-alt {
@@ -40082,7 +40083,7 @@ margin-bottom: 20px !important;
 margin-top: 50px !important;
 }
 
-#af-wrapper a , .title-element{ 
+#af-wrapper a , .title-element{
 	font-size: 14px !important;
 }
 
@@ -40161,12 +40162,12 @@ font-size: 14px;
 .comments-area {
     margin-top: 60px;
     padding: 50px;
-    background: 
+    background:
     #f1f3f6;
 }
 
 .discussion-meta{
-	text-align: right  !important; 
+	text-align: right  !important;
 }
 .discussion-avatar-list{
 	float: right !important;
@@ -40179,7 +40180,7 @@ font-weight: 600;
 }
 .comment-list li{
 	padding: 10px 30px;
-  
+
 background-color:
 #fff;
 margin-bottom: 30px;
@@ -40203,7 +40204,7 @@ ol.children li .comment-meta img
   height: 0px;
   border-style: solid;
   border-width: 10px 15px 10px 0;
-  border-color: transparent #fff transparent transparent;  
+  border-color: transparent #fff transparent transparent;
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
@@ -40289,7 +40290,7 @@ border-radius: 100px;
 
     max-width: 100%;
     box-sizing: border-box;
-    border: 1px solid 
+    border: 1px solid
 
 #ddd;
 
@@ -40300,7 +40301,7 @@ border-radius: 4px;
 }
 #commentform input{
 
-    border: 1px solid 
+    border: 1px solid
 
 #ddd;
 height: 42px;
@@ -40325,7 +40326,7 @@ border: 0  !important;
 	margin: 0;
 }
 .gglcptch_recaptcha {
-  
+
 }
 .gglcptch_recaptcha div , .gglcptch_recaptcha iframe , .rc-anchor-compact{
   width:300px !important;
@@ -40358,7 +40359,7 @@ margin-top: 10px;
 	border: 0;
 	border-radius: 4px;
 }
-.eventDetails a.btn:focus, .eventDetails a.btn:hover, 
+.eventDetails a.btn:focus, .eventDetails a.btn:hover,
 .mc4wp-form-fields input[type="submit"]:hover,
 .mc4wp-form-fields input[type="submit"]:focus
 {
@@ -40367,9 +40368,9 @@ margin-top: 10px;
 	box-shadow: none !important;
 }
 .woocommerce div.product div.images .flex-control-thumbs li 
-{    
+{
 	width: 100%;
-} 
+}
 .related_custom.products > h2
 {
 	font-size: 20px !important;
@@ -40379,7 +40380,7 @@ padding-bottom: 15px;
 }
 .related_custom  li.product a.woocommerce-LoopProduct-link {
     text-decoration: none;
-    background: 
+    background:
     #f1f3f9;
     padding: 12px;
     display: block;
@@ -40466,7 +40467,7 @@ width: 15px;
 }
 
 .ui-slider.ui-widget-content .ui-slider-handle {
-    background: 
+    background:
 #292147;
 border: 1px solid
     #000 !important;
@@ -40494,14 +40495,14 @@ border: 1px solid
     max-width: 400px !important;
     border-radius: 10px;
 }
-body .um .um-form .um-field-area input{ 
+body .um .um-form .um-field-area input{
 	border: 1px solid #a8a8a8   !important;
 }
 .um-field-checkbox-state i, .um-field-radio-state i {
     font-size: 18px  !important;
     line-height: 27px  !important;
     height: 24px;
-    color: 
+    color:
     #aaa;
     transition: all .2s linear;
 }
@@ -40544,7 +40545,7 @@ div.um .g-recaptcha{
     font-weight: 500 !important;
     font-size: 20px!important;
 }
-form .um-col-alt-b:last-child{	
+form .um-col-alt-b:last-child{
 	margin-top: 0 !important;
 	padding-top: 0 !important;
 }
@@ -40575,7 +40576,7 @@ display: inline-block;
 margin-left: 20px;
 }
 body #af-wrapper #forum-navigation a, #af-wrapper #forum-navigation-mobile a{
-	color: #000 !important; 
+	color: #000 !important;
 }
 #um_account_submit_general{
 	margin-top: 20px;
@@ -40750,7 +40751,7 @@ height: 300px;
 width: 100%; */
 }
 .single-post #commentform {
-padding: 10px 20px !important; 
+padding: 10px 20px !important;
 }
 .wc_payment_method label:before{display: none !important;}
 #payment_method_cod ,  #payment_method_razorpay{margin-top: 10px !important;float: left;}
@@ -40901,7 +40902,7 @@ margin-top: 4px;
 .price-tag h2 span {
   font-weight: 300;
   font-size: 16px;
- 
+
 }
 .price-item ul {
   margin: 0;
@@ -40942,7 +40943,7 @@ margin-top: 30px;
 .box-btn:hover, .border-btn:hover {
 	background-color: #292147 !important;
 	color: #fff !important;
-} 
+}
 .price-item{
 	text-align: left;
 	padding: 0px 30px;
@@ -40991,12 +40992,12 @@ float: none;
 	}
 
 body .hed_str {
-  
+
     right: 0;
     top: 114px;
     z-index: 9;
     padding: 7px 15px;
-    color: 
+    color:
 #fff !important;
 background:
     #000;
@@ -41026,7 +41027,7 @@ background:
     margin: 0 auto;
 }
 
-.row .col-lg-6:nth-of-type(2) .price-title:before , 
+.row .col-lg-6:nth-of-type(2) .price-title:before ,
 .row .col-lg-6:nth-of-type(3) .price-title:before{
 	background-size: 50px !important;
 }
@@ -41273,7 +41274,7 @@ height: 100px;
 z-index: 9;
 background-size: 80px;
 background-repeat: no-repeat;
-      
+
 }
 
 .row .col-lg-6:first-child .price-title:before{
@@ -41313,7 +41314,7 @@ text-transform: capitalize;
 .textEvent p , .textEvent h4 , .textEvent h3{
 	margin: 0;
 	color: #000;
-	
+
 }
 
 .textEvent h3{
@@ -41457,7 +41458,7 @@ form#post_activity .form-group {
 
 .leader_board{
         background: #292147;
-  
+
     }
    .leader_board li a {
       margin-right: 25px;
@@ -41467,11 +41468,11 @@ form#post_activity .form-group {
       display: inline-block;
     }
     .leader_board li a:hover {
-     color: #e31e24;     
+     color: #e31e24;
     }
-    .leader_board .show{      
+    .leader_board .show{
       background: #e31e24;
-     
+
     }
     .cycling_fitzista{
     background: #292147;
@@ -41555,7 +41556,7 @@ border-right: 0;
 #fitNonRun_paginate .paginate_button{
 
 }
-#fitNonRun_paginate .paginate_button{	
+#fitNonRun_paginate .paginate_button{
 	background:
 transparent;
 border: 1px solid
@@ -41572,10 +41573,10 @@ border: 0 !important;
 margin: 0px 15px;
 font-size: 13px;
 }
-#fitNonRun_paginate .paginate_button.current , 
+#fitNonRun_paginate .paginate_button.current ,
 #fitNonRun_paginate .paginate_button:hover ,
 #fitNonRun_paginate .paginate_button:focus
-{	
+{
 	background: #e31e24;
 	color: #fff !important;
 	border: 1px solid transparent;
@@ -41640,7 +41641,7 @@ body .header_menu > li > a {
 }
 ul.sub-menu a{
 	transition: all 0.4s;
-	-webkit-transition: all 0.4s;	
+	-webkit-transition: all 0.4s;
 }
 ul.sub-menu a:hover{
 	background-color: #e31e24;
@@ -41701,7 +41702,7 @@ background-image: url("https://www.transparenttextures.com/patterns/climpek.png"
     width: 100%;
     height: 100%;
    /* opacity: 0.3;*/
-    
+
     position: absolute;
 }
 
@@ -41719,16 +41720,16 @@ background-image: url("https://www.transparenttextures.com/patterns/climpek.png"
 }
 .lotus10k .maintitle1{
 
-} 
+}
 /* roadrunners list */
 .home_section{
 	padding: 40px 0;
 }
 .home_section .perform_list li h4{
-	color: #fff !important; 
+	color: #fff !important;
 }
 .home_section .perform_list1 h4{
-	color: #F00 !important; 
+	color: #F00 !important;
 }
 
 section.top_perform {

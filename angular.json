@@ -27,7 +27,7 @@
             "styles": [
               "src/styles.css",
               "src/assets/css/style.css"
-              
+
             ],
             "scripts": [
               "src/assets/js/jquery-3.2.1.min.js",
@@ -99,7 +99,6 @@
             "styles": [
               "src/styles.css",
               "src/assets/css/style.css"
-
             ],
             "scripts": []
           }
