@@ -6,8 +6,8 @@ import { RoadrunnersProfileComponent } from './roadrunners-profile/roadrunners-p
 
 
 const roadrunnersRoutes: Routes = [
-    { 
-        path: "", 
+    {
+        path: '',
         component: RoadrunnersComponent,
         children: [
             {
@@ -15,11 +15,11 @@ const roadrunnersRoutes: Routes = [
               component: RoadrunnersListComponent
             },
             {
-              path: 'profile',
+              path: 'athlete-profile/:id',
               component: RoadrunnersProfileComponent,
               pathMatch: 'full'
             }
-          ]   
+          ]
     }
 ];
 

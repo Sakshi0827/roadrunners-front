@@ -4,8 +4,8 @@
                   <ul>
                         <li style="margin: 5px;" *ngFor = "let users of userData.data ">
                               <div><img src="/assets/images/01.jpg"></div>
-                              <h4><a href="#">{{ users.first_name }} {{ users.last_name }}</a></h4>
-                        </li>  
+                              <h4><a [routerLink]="['athlete-profile', users.user_id]">{{ users.first_name }} {{ users.last_name }}</a></h4>
+                        </li>
                   </ul>
             </div>
       </div>
