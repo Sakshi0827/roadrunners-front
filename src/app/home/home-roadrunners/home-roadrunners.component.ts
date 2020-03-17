@@ -13,13 +13,20 @@ export class HomeRoadrunnersComponent implements OnInit {
   constructor(private userService: UserService) { }
 
   ngOnInit() {
-    this.userService.fetchUsers().subscribe( resData => {
+    this.userService.fetchUsers().subscribe(resData => {
       this.userData = resData;
-      for (let i = 0; i < 3; i++) {
-        this.user.push(this.userData.data[i]);
+      console.log(this.userData.data.length);
+      if (this.userData.data.length>= 8) {
+        for (let i = 0; i < 8; i++) {
+          this.user.push(this.userData.data[i]);
+        }
       }
-      
-      console.log (this.user);
+      else{
+        for(let i=0; i<this.userData.data.length;i++){
+          this.user.push(this.userData.data[i]);
+        }
+      }
+      console.log("hey ", this.user);
     });
   }
 
