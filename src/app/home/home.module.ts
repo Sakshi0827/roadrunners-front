@@ -6,6 +6,7 @@ import { HomeBlogsComponent } from './home-blogs/home-blogs.component';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -19,7 +20,8 @@ import { RouterModule } from '@angular/router';
 
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    HttpClientModule
   ],
 
   exports:[
