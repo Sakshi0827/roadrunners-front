@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-home-roadrunners',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeRoadrunnersComponent implements OnInit {
 
-  constructor() { }
+  userData;
+  user = new Array();
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
+    this.userService.fetchUsers().subscribe( resData => {
+      this.userData = resData;
+      for (let i = 0; i < 3; i++) {
+        this.user.push(this.userData.data[i]);
+      }
+      
+      console.log (this.user);
+    });
   }
 
 }
