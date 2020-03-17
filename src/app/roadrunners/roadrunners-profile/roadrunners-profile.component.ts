@@ -21,7 +21,7 @@ export class RoadrunnersProfileComponent implements OnInit, OnDestroy {
       (params: Params) => {
       this.userId = params.id;
     });
-    this.userService.fetchAthlete(this.userId).subscribe(resData => {
+    this.athleteSubscription = this.userService.fetchUser(this.userId).subscribe(resData => {
       this.athleteData = (resData);
       console.log('user id ' + this.userId);
       console.log('AthleteData ' + JSON.stringify(this.athleteData));

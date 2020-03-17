@@ -12,7 +12,7 @@ export class RoadrunnersListComponent implements OnInit {
   constructor(private userService: UserService) { }
 
   ngOnInit() {
-    this.userService.fetchUsers().subscribe( resData => {
+    this.userService.fetchAllUsers().subscribe( resData => {
       this.userData = resData;
       console.log(this.userData);
     });

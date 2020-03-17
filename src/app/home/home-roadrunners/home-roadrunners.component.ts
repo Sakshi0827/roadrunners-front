@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-roadrunners',
@@ -10,10 +11,10 @@ export class HomeRoadrunnersComponent implements OnInit {
 
   userData;
   user = new Array();
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private route: Router) { }
 
   ngOnInit() {
-    this.userService.fetchUsers().subscribe(resData => {
+    this.userService.fetchAllUsers().subscribe(resData => {
       this.userData = resData;
       console.log(this.userData.data.length);
       if (this.userData.data.length>= 8) {
@@ -29,5 +30,4 @@ export class HomeRoadrunnersComponent implements OnInit {
       console.log("hey ", this.user);
     });
   }
-
 }

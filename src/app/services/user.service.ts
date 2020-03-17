@@ -8,13 +8,10 @@ import { __param } from 'tslib';
 export class UserService {
     constructor(private http: HttpClient) { }
 
-    fetchUsers() {
+    fetchAllUsers() {
         return this.http.get('http://localhost:3000/user-list');
     }
-    fetchAthlete(id: string) {
-        let headers = new Headers();
-        headers.append('Content-Type', 'application/json');
-        headers.append('projectid', id);
+    fetchUser(id: string) {
         return this.http.get('http://localhost:3000/user', { params: new HttpParams().set('user_id',  id) })
     }
 }
