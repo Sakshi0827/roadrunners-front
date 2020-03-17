@@ -1,1 +1,13 @@
-<p>home-roadrunners works!</p>
+<section class="top_perform home_section">
+      <div class="container">
+            <h3 class="home_title">Our RoadRunners</h3>
+            <div class="perform_list_inner">
+                  <ul class="perform_list">
+                        <li style="margin: 5px;" *ngFor="let users of user ">
+                              <div><img src="/assets/images/01.jpg"></div>
+                              <h4><a href="#">{{ users.first_name }} {{ users.last_name }}</a></h4>
+                        </li>
+                  </ul>
+            </div>
+      </div>
+</section>
