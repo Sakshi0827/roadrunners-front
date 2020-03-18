@@ -11,7 +11,7 @@ export class BlogService {
     }
 
     fetchBlog(id: any) {
-        return this.http.get('http://localhost:3000/blogs', { params: new HttpParams().set('blog_id',  id) });
+        return this.http.get('http://localhost:3000/blog-detail', { params: new HttpParams().set('blog_id',  id) });
     }
     
 }

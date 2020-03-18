@@ -1,1 +1,691 @@
-<p>blog-detail works!</p>
+<section id="" class=" ls s-py-40 s-py-md-40 s-py-xl-40 c-mb-40">
+    <div class="container">
+        <div class="row">
+            <main class="col-lg-12">
+                <article class="vertical-item post type-event status-publish format-standard has-post-thumbnail">
+                    <div class="item-content hero-bg">
+                        <div class="row">
+                            <div class="col-lg-4 text-right">
+                                <img src="http://localhost:3000/{{ blog.data.blogs_image }}"
+                                    alt="The time when I discovered the Avatar within!">
+                            </div>
+                            <div class="col-lg-8">
+                                <!-- .post-thumbnail -->
+                                <header class="entry-header">
+                                    <div class="entry-meta">
+                                        <p
+                                            class="item-meta d-flex justify-content-xl-start flex-xl-row flex-column justify-content-center">
+                                            <span>
+                                                <i class="fa fa-calendar color-main3"></i>
+                                                {{ blog.data.blogs_post_date }}</span>
+                                        </p>
+                                    </div>
+                                    <!-- .entry-meta -->
+                                </header>
+                                <!-- .entry-header -->
+                                <div class="entry-content eventDetails">
+                                    <h4 class="mt-1 mb-20">{{ blog.data.blogs_title }}!</h4>
+                                    <div style="width: 250px;;" [innerHTML] = 'blog.data.blogs_description'></div>
+                                    <p><strong>{{ blog.data.User.first_name }} {{ blog.data.User.last_name }}</strong></p>
+                                    <p>(Architect, Marathoner, Cyclist)</p>
+                                </div>
+                                <!-- .entry-content -->
+                            </div>
+                        </div>
+                        <!-- .item-content -->
+                        <div id="comments" class="comments-area">
+                            <div class="comments-title-wrap">
+                                <h2 class="comments-title">
+                                    Join the Conversation </h2><!-- .comments-title -->
+                                <div class="discussion-meta">
+                                    <ol class="discussion-avatar-list">
+                                        <li>
+                                            <div class="comment-user-avatar comment-author vcard"><img alt=""
+                                                    src="https://secure.gravatar.com/avatar/d33dfa4ccb587cdbef0902011622cbb7?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/d33dfa4ccb587cdbef0902011622cbb7?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"></div>
+                                        </li>
+                                        <li>
+                                            <div class="comment-user-avatar comment-author vcard"><img alt=""
+                                                    src="https://secure.gravatar.com/avatar/c29fd6ed00304ab9359745aa611e96fb?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/c29fd6ed00304ab9359745aa611e96fb?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"></div>
+                                        </li>
+                                        <li>
+                                            <div class="comment-user-avatar comment-author vcard"><img alt=""
+                                                    src="https://secure.gravatar.com/avatar/94236129fc41c07e0e1192828c08259c?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/94236129fc41c07e0e1192828c08259c?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"></div>
+                                        </li>
+                                        <li>
+                                            <div class="comment-user-avatar comment-author vcard"><img alt=""
+                                                    src="https://secure.gravatar.com/avatar/fedb4147630374cb0da6fe363d018e55?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/fedb4147630374cb0da6fe363d018e55?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"></div>
+                                        </li>
+                                        <li>
+                                            <div class="comment-user-avatar comment-author vcard"><img alt=""
+                                                    src="https://secure.gravatar.com/avatar/03cf1bab931ef5aa1a8696a55eeea7ac?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/03cf1bab931ef5aa1a8696a55eeea7ac?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"></div>
+                                        </li>
+                                        <li>
+                                            <div class="comment-user-avatar comment-author vcard"><img alt=""
+                                                    src="https://secure.gravatar.com/avatar/43442fe86389bb3f5d3a0110765ee725?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/43442fe86389bb3f5d3a0110765ee725?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"></div>
+                                        </li>
+                                    </ol><!-- .discussion-avatar-list -->
+                                    <p class="discussion-meta-info">
+                                        <svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img"
+                                            focusable="false" viewBox="0 0 24 24" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path
+                                                d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z">
+                                            </path>
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                        </svg> <span>14 Comments</span>
+                                    </p>
+                                </div><!-- .discussion-meta -->
+                            </div><!-- .comments-title-flex -->
+                            <ol class="comment-list">
+                                <li id="comment-3" class="comment even thread-even depth-1">
+                                    <article id="div-comment-3" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/d33dfa4ccb587cdbef0902011622cbb7?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/d33dfa4ccb587cdbef0902011622cbb7?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"><b
+                                                    class="fn">Vijay Sohni</b> <span
+                                                    class="screen-reader-text says">says:</span> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-3">
+                                                    <time datetime="2020-01-02T14:21:56+00:00"
+                                                        title="January 2, 2020 at 2:21 pm">
+                                                        January 2, 2020 at 2:21 pm </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>Excellent</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=3#respond"
+                                            data-commentid="3" data-postid="886" data-belowelement="div-comment-3"
+                                            data-respondelement="respond" aria-label="Reply to Vijay Sohni">Reply</a>
+                                    </div>
+                                </li><!-- #comment-## -->
+                                <li id="comment-4" class="comment odd alt thread-odd thread-alt depth-1">
+                                    <article id="div-comment-4" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/c29fd6ed00304ab9359745aa611e96fb?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/c29fd6ed00304ab9359745aa611e96fb?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"><b
+                                                    class="fn">Deepti Vyas</b> <span
+                                                    class="screen-reader-text says">says:</span> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-4">
+                                                    <time datetime="2020-01-02T15:03:47+00:00"
+                                                        title="January 2, 2020 at 3:03 pm">
+                                                        January 2, 2020 at 3:03 pm </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>I know aalas aur avatar ki dushmani hai. U have very rightly expressed
+                                                the emotional fight.I feel everyone has some % of avatar within.But
+                                                truely speaking it needs a great effort to awaken the avatar.<br>
+                                                Its great that you and avatar together can make it an effort to kill
+                                                todays chilling cold and KOHARA whare there was hardly any
+                                                visibility.<br>
+                                                Ye dharti dhanya aise avatar aur insaano se hi hoti hai..<br>
+                                                I thik this is the first and foremost effort towards GREEN living rather
+                                                more precisely VIBGYOR living .<br>
+                                                Inspiring .</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=4#respond"
+                                            data-commentid="4" data-postid="886" data-belowelement="div-comment-4"
+                                            data-respondelement="respond" aria-label="Reply to Deepti Vyas">Reply</a>
+                                    </div>
+                                </li><!-- #comment-## -->
+                                <li id="comment-5" class="comment even thread-even depth-1">
+                                    <article id="div-comment-5" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/94236129fc41c07e0e1192828c08259c?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/94236129fc41c07e0e1192828c08259c?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"><b
+                                                    class="fn">Harshika</b> <span
+                                                    class="screen-reader-text says">says:</span> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-5">
+                                                    <time datetime="2020-01-02T16:05:15+00:00"
+                                                        title="January 2, 2020 at 4:05 pm">
+                                                        January 2, 2020 at 4:05 pm </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>Very Inspirational! I hope I find my ‘avatar’ some day!!<br>
+                                                And what’s technical shoes? 🤔</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=5#respond"
+                                            data-commentid="5" data-postid="886" data-belowelement="div-comment-5"
+                                            data-respondelement="respond" aria-label="Reply to Harshika">Reply</a></div>
+                                </li><!-- #comment-## -->
+                                <li id="comment-6" class="comment odd alt thread-odd thread-alt depth-1">
+                                    <article id="div-comment-6" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/fedb4147630374cb0da6fe363d018e55?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/fedb4147630374cb0da6fe363d018e55?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"><b
+                                                    class="fn">yogendra vyas</b> <span
+                                                    class="screen-reader-text says">says:</span> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-6">
+                                                    <time datetime="2020-01-02T17:29:58+00:00"
+                                                        title="January 2, 2020 at 5:29 pm">
+                                                        January 2, 2020 at 5:29 pm </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>great raj ji</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=6#respond"
+                                            data-commentid="6" data-postid="886" data-belowelement="div-comment-6"
+                                            data-respondelement="respond" aria-label="Reply to yogendra vyas">Reply</a>
+                                    </div>
+                                </li><!-- #comment-## -->
+                                <li id="comment-7" class="comment even thread-even depth-1">
+                                    <article id="div-comment-7" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/03cf1bab931ef5aa1a8696a55eeea7ac?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/03cf1bab931ef5aa1a8696a55eeea7ac?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"><b
+                                                    class="fn">Rohit Shukla</b> <span
+                                                    class="screen-reader-text says">says:</span> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-7">
+                                                    <time datetime="2020-01-02T17:30:16+00:00"
+                                                        title="January 2, 2020 at 5:30 pm">
+                                                        January 2, 2020 at 5:30 pm </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>Lovely reading..<br>
+                                                Waiting for chapter two.</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=7#respond"
+                                            data-commentid="7" data-postid="886" data-belowelement="div-comment-7"
+                                            data-respondelement="respond" aria-label="Reply to Rohit Shukla">Reply</a>
+                                    </div>
+                                </li><!-- #comment-## -->
+                                <li id="comment-8" class="comment odd alt thread-odd thread-alt depth-1">
+                                    <article id="div-comment-8" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/43442fe86389bb3f5d3a0110765ee725?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/43442fe86389bb3f5d3a0110765ee725?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"><b
+                                                    class="fn">Dipti Swami</b> <span
+                                                    class="screen-reader-text says">says:</span> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-8">
+                                                    <time datetime="2020-01-02T18:49:57+00:00"
+                                                        title="January 2, 2020 at 6:49 pm">
+                                                        January 2, 2020 at 6:49 pm </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>Thanks for sharing such an amazing article, really very thoughtful.
+                                                Inormation shared is useful at least to me. You are doing a great job,
+                                                Keep up writing.</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=8#respond"
+                                            data-commentid="8" data-postid="886" data-belowelement="div-comment-8"
+                                            data-respondelement="respond" aria-label="Reply to Dipti Swami">Reply</a>
+                                    </div>
+                                </li><!-- #comment-## -->
+                                <li id="comment-9" class="comment even thread-even depth-1">
+                                    <article id="div-comment-9" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/2e6c630a2cf0aae4d438e27da02f2143?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/2e6c630a2cf0aae4d438e27da02f2143?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"><b
+                                                    class="fn">Rajeev Lunkad</b> <span
+                                                    class="screen-reader-text says">says:</span> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-9">
+                                                    <time datetime="2020-01-03T03:12:54+00:00"
+                                                        title="January 3, 2020 at 3:12 am">
+                                                        January 3, 2020 at 3:12 am </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>Very inspiring… I’m going to get some running into my life 🙂</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=9#respond"
+                                            data-commentid="9" data-postid="886" data-belowelement="div-comment-9"
+                                            data-respondelement="respond" aria-label="Reply to Rajeev Lunkad">Reply</a>
+                                    </div>
+                                </li><!-- #comment-## -->
+                                <li id="comment-10" class="comment odd alt thread-odd thread-alt depth-1">
+                                    <article id="div-comment-10" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/1961414ed762be771123bcc012af3887?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/1961414ed762be771123bcc012af3887?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"><b
+                                                    class="fn">Prakriti sethi</b> <span
+                                                    class="screen-reader-text says">says:</span> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-10">
+                                                    <time datetime="2020-01-03T04:21:25+00:00"
+                                                        title="January 3, 2020 at 4:21 am">
+                                                        January 3, 2020 at 4:21 am </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>Very Inspiring ….<br>
+                                                Running is a way of finding one’s inner self, it has more to do with
+                                                mind power rather than ones physical strengths.</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=10#respond"
+                                            data-commentid="10" data-postid="886" data-belowelement="div-comment-10"
+                                            data-respondelement="respond" aria-label="Reply to Prakriti sethi">Reply</a>
+                                    </div>
+                                </li><!-- #comment-## -->
+                                <li id="comment-11" class="comment even thread-even depth-1">
+                                    <article id="div-comment-11" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <a href="http://sanjuruns.com" rel="external nofollow" class="url"><img
+                                                        alt=""
+                                                        src="https://secure.gravatar.com/avatar/44a3459394d141a6dc58f5eac90bd0e6?s=60&amp;d=mm&amp;r=g"
+                                                        srcset="https://secure.gravatar.com/avatar/44a3459394d141a6dc58f5eac90bd0e6?s=120&amp;d=mm&amp;r=g 2x"
+                                                        class="avatar avatar-60 photo" height="60" width="60"><b
+                                                        class="fn">Sanjeev</b> <span
+                                                        class="screen-reader-text says">says:</span></a> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-11">
+                                                    <time datetime="2020-01-03T23:54:14+00:00"
+                                                        title="January 3, 2020 at 11:54 pm">
+                                                        January 3, 2020 at 11:54 pm </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>Avatar, that’s the healthy you. The positive you. The stronger you. The
+                                                smiling you.</p>
+                                            <p>Very well said Vaswaniji. I am also an inspired runner like you. Picking
+                                                up running at 38. And this year in Jan, I will be running my dream Tata
+                                                Mumbai marathon.</p>
+                                            <p>Are we game for it.</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=11#respond"
+                                            data-commentid="11" data-postid="886" data-belowelement="div-comment-11"
+                                            data-respondelement="respond" aria-label="Reply to Sanjeev">Reply</a></div>
+                                </li><!-- #comment-## -->
+                                <li id="comment-12" class="comment odd alt thread-odd thread-alt depth-1 parent">
+                                    <article id="div-comment-12" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/174a2c72988591a608873fe8f944f0cf?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/174a2c72988591a608873fe8f944f0cf?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"><b
+                                                    class="fn">Yogesh</b> <span
+                                                    class="screen-reader-text says">says:</span> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-12">
+                                                    <time datetime="2020-01-04T17:09:58+00:00"
+                                                        title="January 4, 2020 at 5:09 pm">
+                                                        January 4, 2020 at 5:09 pm </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>Truly inspirational, would love to hear many more avatar from Raj👍😀</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=12#respond"
+                                            data-commentid="12" data-postid="886" data-belowelement="div-comment-12"
+                                            data-respondelement="respond" aria-label="Reply to Yogesh">Reply</a></div>
+                                    <ol class="children">
+                                        <li id="comment-13" class="comment even depth-2">
+                                            <article id="div-comment-13" class="comment-body">
+                                                <footer class="comment-meta">
+                                                    <div class="comment-author vcard">
+                                                        <img alt=""
+                                                            src="https://secure.gravatar.com/avatar/174a2c72988591a608873fe8f944f0cf?s=60&amp;d=mm&amp;r=g"
+                                                            srcset="https://secure.gravatar.com/avatar/174a2c72988591a608873fe8f944f0cf?s=120&amp;d=mm&amp;r=g 2x"
+                                                            class="avatar avatar-60 photo" height="60" width="60"><b
+                                                            class="fn">Yog Yogesh</b> <span
+                                                            class="screen-reader-text says">says:</span> </div>
+                                                    <!-- .comment-author -->
+
+                                                    <div class="comment-metadata">
+                                                        <a
+                                                            href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-13">
+                                                            <time datetime="2020-01-04T17:12:20+00:00"
+                                                                title="January 4, 2020 at 5:12 pm">
+                                                                January 4, 2020 at 5:12 pm </time>
+                                                        </a>
+                                                    </div><!-- .comment-metadata -->
+
+                                                </footer><!-- .comment-meta -->
+
+                                                <div class="comment-content">
+                                                    <p>👍</p>
+                                                </div><!-- .comment-content -->
+
+                                            </article><!-- .comment-body -->
+
+                                            <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                                    href="/the-time-when-i-discovered-the-avatar-within/?replytocom=13#respond"
+                                                    data-commentid="13" data-postid="886"
+                                                    data-belowelement="div-comment-13" data-respondelement="respond"
+                                                    aria-label="Reply to Yog Yogesh">Reply</a></div>
+                                        </li><!-- #comment-## -->
+                                    </ol><!-- .children -->
+                                </li><!-- #comment-## -->
+                                <li id="comment-14" class="comment odd alt thread-even depth-1">
+                                    <article id="div-comment-14" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/5dfdb96830ead308b338b606ed85f98b?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/5dfdb96830ead308b338b606ed85f98b?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"><b
+                                                    class="fn">Shruti C Purohit</b> <span
+                                                    class="screen-reader-text says">says:</span> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-14">
+                                                    <time datetime="2020-01-07T04:29:40+00:00"
+                                                        title="January 7, 2020 at 4:29 am">
+                                                        January 7, 2020 at 4:29 am </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>Truly inspirational! Great going.</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=14#respond"
+                                            data-commentid="14" data-postid="886" data-belowelement="div-comment-14"
+                                            data-respondelement="respond"
+                                            aria-label="Reply to Shruti C Purohit">Reply</a></div>
+                                </li><!-- #comment-## -->
+                                <li id="comment-15" class="comment even thread-odd thread-alt depth-1">
+                                    <article id="div-comment-15" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/e640f8ab5c4f873c57be19c419513c80?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/e640f8ab5c4f873c57be19c419513c80?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"><b
+                                                    class="fn">Ishita Barjatya</b> <span
+                                                    class="screen-reader-text says">says:</span> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-15">
+                                                    <time datetime="2020-01-08T05:50:30+00:00"
+                                                        title="January 8, 2020 at 5:50 am">
+                                                        January 8, 2020 at 5:50 am </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>Ultimate motivation you are Vaswani sir ! Amazingly refreshing Blog !
+                                                Excited for the next ones !</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=15#respond"
+                                            data-commentid="15" data-postid="886" data-belowelement="div-comment-15"
+                                            data-respondelement="respond"
+                                            aria-label="Reply to Ishita Barjatya">Reply</a></div>
+                                </li><!-- #comment-## -->
+                                <li id="comment-16" class="comment odd alt thread-even depth-1">
+                                    <article id="div-comment-16" class="comment-body">
+                                        <footer class="comment-meta">
+                                            <div class="comment-author vcard">
+                                                <img alt=""
+                                                    src="https://secure.gravatar.com/avatar/659304cce15f301f505265ff377bb1d1?s=60&amp;d=mm&amp;r=g"
+                                                    srcset="https://secure.gravatar.com/avatar/659304cce15f301f505265ff377bb1d1?s=120&amp;d=mm&amp;r=g 2x"
+                                                    class="avatar avatar-60 photo" height="60" width="60"><b
+                                                    class="fn">Kalpana Babar</b> <span
+                                                    class="screen-reader-text says">says:</span> </div>
+                                            <!-- .comment-author -->
+
+                                            <div class="comment-metadata">
+                                                <a
+                                                    href="https://roadrunners.in/the-time-when-i-discovered-the-avatar-within/#comment-16">
+                                                    <time datetime="2020-01-09T08:20:09+00:00"
+                                                        title="January 9, 2020 at 8:20 am">
+                                                        January 9, 2020 at 8:20 am </time>
+                                                </a>
+                                            </div><!-- .comment-metadata -->
+
+                                        </footer><!-- .comment-meta -->
+
+                                        <div class="comment-content">
+                                            <p>Good initiative. It takes confidence and discipline to be a blogger. But
+                                                running has taught you that.<br>
+                                                Nice to meet the avatar within you that has brought beautiful smiles on
+                                                your face.<br>
+                                                Keep running and blogging.</p>
+                                        </div><!-- .comment-content -->
+
+                                    </article><!-- .comment-body -->
+
+                                    <div class="comment-reply"><a rel="nofollow" class="comment-reply-link"
+                                            href="/the-time-when-i-discovered-the-avatar-within/?replytocom=16#respond"
+                                            data-commentid="16" data-postid="886" data-belowelement="div-comment-16"
+                                            data-respondelement="respond" aria-label="Reply to Kalpana Babar">Reply</a>
+                                    </div>
+                                </li><!-- #comment-## -->
+                            </ol><!-- .comment-list -->
+                            <div class="comment-form-flex">
+                                <span class="screen-reader-text">Leave a comment</span>
+                                <div id="respond" class="comment-respond">
+                                    <h3 id="reply-title" class="comment-reply-title"> <small><a rel="nofollow"
+                                                id="cancel-comment-reply-link"
+                                                href="/the-time-when-i-discovered-the-avatar-within/#respond"
+                                                style="display:none;">Cancel reply</a></small></h3>
+                                    <form action="https://roadrunners.in/wp-comments-post.php" method="post"
+                                        id="commentform" class="comment-form" novalidate="">
+                                        <p class="comment-notes"><span id="email-notes">Your email address will not be
+                                                published.</span> Required fields are marked <span
+                                                class="required">*</span></p>
+                                        <p class="comment-form-comment"><label for="comment">Comment</label> <textarea
+                                                id="comment" name="comment" cols="45" rows="5" maxlength="65525"
+                                                required="required"></textarea></p>
+                                        <p class="comment-form-author"><label for="author">Name <span
+                                                    class="required">*</span></label> <input id="author" name="author"
+                                                type="text" value="" size="30" maxlength="245" required="required"></p>
+                                        <p class="comment-form-email"><label for="email">Email <span
+                                                    class="required">*</span></label> <input id="email" name="email"
+                                                type="email" value="" size="30" maxlength="100"
+                                                aria-describedby="email-notes" required="required"></p>
+                                        <p class="comment-form-url"><label for="url">Website</label> <input id="url"
+                                                name="url" type="url" value="" size="30" maxlength="200"></p>
+                                        <p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent"
+                                                name="wp-comment-cookies-consent" type="checkbox" value="yes"><label
+                                                for="wp-comment-cookies-consent">Save my name, email, and website in
+                                                this browser for the next time I comment.</label></p>
+                                        <div class="gglcptch gglcptch_v2">
+                                            <div id="gglcptch_recaptcha_197485206" class="gglcptch_recaptcha">
+                                                <div style="width: 164px; height: 144px;">
+                                                    <div><iframe
+                                                            src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lc41r4UAAAAAKEimw4h2MCls0OTmc_arZysVyVv&amp;co=aHR0cHM6Ly9yb2FkcnVubmVycy5pbjo0NDM.&amp;hl=en&amp;v=f1wAZV34wmOO4-wA3kszbUcM&amp;theme=light&amp;size=compact&amp;cb=8xjjcmaprt0x"
+                                                            width="164" height="144" role="presentation"
+                                                            name="a-5mnb3tyez3je" frameborder="0" scrolling="no"
+                                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                                    </div><textarea id="g-recaptcha-response"
+                                                        name="g-recaptcha-response" class="g-recaptcha-response"
+                                                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                                </div><iframe style="display: none;"></iframe>
+                                            </div>
+                                            <noscript>
+                                                <div style="width: 302px;">
+                                                    <div style="width: 302px; height: 422px; position: relative;">
+                                                        <div style="width: 302px; height: 422px; position: absolute;">
+                                                            <iframe
+                                                                src="https://www.google.com/recaptcha/api/fallback?k=6Lc41r4UAAAAAKEimw4h2MCls0OTmc_arZysVyVv"
+                                                                frameborder="0" scrolling="no"
+                                                                style="width: 302px; height:422px; border-style: none;"></iframe>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        style="border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px; height: 60px; width: 300px;">
+                                                        <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                                            class="g-recaptcha-response"
+                                                            style="width: 250px !important; height: 40px !important; border: 1px solid #c1c1c1 !important; margin: 10px 25px !important; padding: 0px !important; resize: none !important;"></textarea>
+                                                    </div>
+                                                </div>
+                                            </noscript>
+                                        </div>
+                                        <p class="form-submit"><input name="submit" type="submit" id="submit"
+                                                class="submit" value="Post Comment" disabled=""> <input type="hidden"
+                                                name="comment_post_ID" value="886" id="comment_post_ID">
+                                            <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                                        </p>
+                                    </form>
+                                </div><!-- #respond -->
+                                <h2 class="comments-title" aria-hidden="true">Leave a comment</h2>
+                            </div>
+                        </div><!-- #comments -->
+
+                    </div>
+                </article>
+
+
+
+
+            </main>
+        </div>
+
+    </div>
+
+</section>
