@@ -9,10 +9,10 @@ import { BlogService } from '../services/blog.service';
 export class BlogsComponent implements OnInit {
 
   allBlogs;
-  constructor(private blogsService: BlogService) { }
+  constructor(private blogService: BlogService) { }
 
   ngOnInit() {
-    this.blogsService.fetchAllBlogs().subscribe( resData => {
+    this.blogService.fetchAllBlogs().subscribe( resData => {
       this.allBlogs = resData;
       console.log(this.allBlogs);
     });
