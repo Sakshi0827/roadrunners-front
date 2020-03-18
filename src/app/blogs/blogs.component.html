@@ -21,7 +21,7 @@
       <li *ngFor="let blogs of allBlogs.data">
         <div class="blog_img"><img src="http://localhost:3000/{{ blogs.blogs_image }}"></div>
         <div class="blog_title">
-          <h5><a [routerLink]="['blog-detail', 'id' ]"> {{blogs.blogs_title}}</a></h5>
+          <h5><a [routerLink]="['blog-detail', blogs.blogs_id ]"> {{blogs.blogs_title}}</a></h5>
         </div>
         <div class="blog_author">By {{blogs.User.first_name}} {{blogs.User.last_name}}</div>
         <div class="blog_des" [innerHTML]="blogs.blogs_description | slice:0:150"> </div>
