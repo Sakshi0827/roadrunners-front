@@ -23,7 +23,7 @@
         <div class="blog_title">
           <h5><a [routerLink]="['blog-detail', 'id' ]"> {{blogs.blogs_title}}</a></h5>
         </div>
-        <div class="blog_author">By Vijay Sohni</div>
+        <div class="blog_author">By {{blogs.User.first_name}} {{blogs.User.last_name}}</div>
         <div class="blog_des" [innerHTML]="blogs.blogs_description | slice:0:150"> </div>
       </li>
     </ul>
