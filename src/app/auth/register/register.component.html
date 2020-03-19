@@ -96,35 +96,28 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label for="country">Country</label>
-                        <select id="country" class="form-control" formControlName="country">
-                            <option *ngFor="let country of allCountry.data" [ngValue]="country.country_id" >{{ country.country_name }}</option>
+                        <select id="country" class="form-control" formControlName="country" *ngFor="let country of allCountry.data" (change)="onChangeCountry($event.target.value)">
+                            <option [value]="[country.country_id]" >{{ country.country_name }}</option>
                         </select>
                     </div>
-
                 </div>
-
+                
+                <h4>{{allState}}</h4>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6" >
                         <label for="state">State</label>
-                        <select id="state" class="form-control" formControlName="state">
-                            <option value="" selected="selected"></option>
-                            <option value="Afghanistan">Afghanistan</option>
-                            <option value="Åland Islands">Åland Islands</option>
-                            <option value="Albania">Albania</option>
-                            <option value="Algeria">Algeria</option>
-                            <option value="Zimbabwe">Zimbabwe</option>
+                        <select id="state" class="form-control" formControlName="state" (change)="onChangeState($event.target.value)">
+                            <div *ngIf="allState">
+                                <option value="">Select</option>
+                                <option *ngFor = "let state of allState.data" [value]="[state.state_id]" >{{ state.state_name }}</option>
+                            </div>
                         </select>
                     </div>
 
                     <div class="form-group col-md-6">
                         <label for="city">City</label>
                         <select id="city" class="form-control" formControlName="city">
-                            <option value="" selected="selected"></option>
-                            <option value="Afghanistan">Afghanistan</option>
-                            <option value="Åland Islands">Åland Islands</option>
-                            <option value="Albania">Albania</option>
-                            <option value="Algeria">Algeria</option>
-                            <option value="Zimbabwe">Zimbabwe</option>
+                            <!-- <option value="" selected="selected"></option> -->
                         </select>
                     </div>
 

@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable({ providedIn: "root" })
 export class AuthService {
+    loginData: {email: string, password: string};
     constructor(private http: HttpClient) {}
     
     fetchFitnessGroup() {
@@ -14,7 +15,11 @@ export class AuthService {
     fetchState(countryId: any) {
         return this.http.get('http://localhost:3000/fetch-state'+ countryId );
     }
-    fetchCity() {
-        return this.http.get('http://localhost:3000/city');
+    fetchCity(stateId: any) {
+        return this.http.get('http://localhost:3000/fetch-city'+stateId);
     }
+    login(loginData){
+        return this.http.post('http://localhost:3000/login', loginData);
+    }
+
 }
