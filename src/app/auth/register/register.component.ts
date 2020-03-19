@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgForm, FormGroup, FormControl, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -7,6 +7,7 @@ import { NgForm, FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+
   // templatedriven approach
   // @ViewChild('f', {static:false}) signupForm: NgForm;
   // defaultUsername = "abc";
@@ -21,7 +22,6 @@ export class RegisterComponent implements OnInit {
 
 
   // reactive approach
-
   signupForm: FormGroup;
   forbiddenUsernames = ['a', 'b'];
 
@@ -55,4 +55,5 @@ export class RegisterComponent implements OnInit {
     }
     return null;
   }
+
 }

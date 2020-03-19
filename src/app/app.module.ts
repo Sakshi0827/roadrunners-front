@@ -1,18 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
+
+import { FooterComponent } from './shared/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
-  import { from } from 'rxjs';
-import { HomeModule } from './home/home.module';
-import { IndiaEventModule } from './india-event/india-event.module';
-import { RoadrunnersModule } from './roadrunners/roadrunners.module';
-import { RegisterModule } from './register/register.module';
-import { FormsModule } from '@angular/forms';
-import { LoginModule } from './login/login.module';
-import { BlogsModule } from './blogs/blogs.module';
 
 @NgModule({
   declarations: [
@@ -23,13 +18,8 @@ import { BlogsModule } from './blogs/blogs.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule,
-    IndiaEventModule,
-    RoadrunnersModule,
-    RegisterModule,
-    LoginModule,
-    BlogsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

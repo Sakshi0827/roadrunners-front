@@ -5,7 +5,7 @@ const routes: Routes = [
   // { path: "", loadChildren: "./home/home.module.ts#HomeModule"}
   { 
     path: '', 
-    redirectTo:'/home', 
+    redirectTo:'home', 
     pathMatch:'full'
   },
   {
@@ -25,12 +25,8 @@ const routes: Routes = [
     loadChildren: './roadrunners/roadrunners.module#RoadrunnersModule'
   },
   {
-    path: 'register',
-    loadChildren: './register/register.module#RegisterModule'
-  },
-  {
-    path: 'login',
-    loadChildren: './login/login.module#LoginModule'
+    path: 'auth',
+    loadChildren: './auth/auth.module#AuthModule'
   }
 ];
 
