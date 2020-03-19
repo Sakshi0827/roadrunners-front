@@ -70,6 +70,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
   onSubmit(){
     console.log(this.signupForm);
   }
+  
   onChangeCountry(countryId: any){
     console.log('countryId:-- ' +countryId);
     this.allStateSubscription = this.authService.fetchState(countryId).subscribe(resData => {
@@ -92,9 +93,9 @@ export class RegisterComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.allCountrySubscription.unsubscribe();
-    this.allStateSubscription.unsubscribe();
+    // this.allCountrySubscription.unsubscribe();
+    // this.allStateSubscription.unsubscribe();
     // this.allCitySubscription.unsubscribe();
-    this.allFitnessGroupSubscription.unsubscribe()
+    // this.allFitnessGroupSubscription.unsubscribe()
   }
 }
