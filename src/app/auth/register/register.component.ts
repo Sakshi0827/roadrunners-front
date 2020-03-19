@@ -70,6 +70,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
   onSubmit() {
     console.log(this.signupForm);
   }
+
   onChangeCountry(countryId: any) {
     console.log('countryId:-- ' + countryId);
     // this.allStateSubscription = this.authService.fetchState(countryId).subscribe(resData => {

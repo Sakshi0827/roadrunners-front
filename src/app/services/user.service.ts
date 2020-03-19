@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { parseLazyRoute } from '@angular/compiler/src/aot/lazy_routes';
 import { __param } from 'tslib';
 
 @Injectable({ providedIn: 'root' })
