@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
   };
   loginSubscription: Subscription;
   loggedIn: false;
+
   constructor(private authService: AuthService, private route: Router) {}
 
   ngOnInit() {
@@ -28,14 +29,21 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
+    if (!this.loginForm.valid) {
+      return;
+    }
+
     this.loginData = {
       email: this.loginForm.get('email').value,
       password: this.loginForm.get('password').value
     };
     console.log(this.loginData);
-    this. loginSubscription = this.authService.login(this.loginData).subscribe(resData => {
-      this.loggedIn = resData.loggedIn;
+    this.loginSubscription = this.authService.login(this.loginData).subscribe(resData => {
+      console.log(resData);
+    }, error => {
+      console.log(error);
     });
+
     if (this.loggedIn) {
       this.route.navigate(['/home']);
     }

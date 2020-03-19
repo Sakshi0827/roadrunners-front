@@ -50,51 +50,51 @@ export class RegisterComponent implements OnInit, OnDestroy {
       console.log(this.allCountry);
     });
     this.signupForm = new FormGroup({
-      'firstname' : new FormControl(null, Validators.required),
-      'lastname': new FormControl(null),
-      'username': new FormControl(null, [Validators.required, this.forbiddenNames.bind(this)]),
-      'email' : new FormControl(null, [Validators.required, Validators.email]),
-      'password': new FormControl(null),
-      'dob': new FormControl(null),
-      'gender': new FormControl('female'),
-      'mobile': new FormControl(null),
-      'city': new FormControl(null),
-      'state': new FormControl(null),
-      'country': new FormControl(null, [Validators.required]),
-      'pincode': new FormControl(null),
-      'fitnessgroup': new FormControl(null),
-      'company': new FormControl(null)
+      firstname : new FormControl(null, Validators.required),
+      lastname: new FormControl(null),
+      username: new FormControl(null, [Validators.required, this.forbiddenNames.bind(this)]),
+      email : new FormControl(null, [Validators.required, Validators.email]),
+      password: new FormControl(null),
+      dob: new FormControl(null),
+      gender: new FormControl('female'),
+      mobile: new FormControl(null),
+      city: new FormControl(null),
+      state: new FormControl(null),
+      country: new FormControl(null, [Validators.required]),
+      pincode: new FormControl(null),
+      fitnessgroup: new FormControl(null),
+      company: new FormControl(null)
     });
   }
 
-  onSubmit(){
+  onSubmit() {
     console.log(this.signupForm);
   }
-  onChangeCountry(countryId: any){
-    console.log('countryId:-- ' +countryId);
-    this.allStateSubscription = this.authService.fetchState(countryId).subscribe(resData => {
-      this.allState = resData;
-      console.log('States By country:--' +JSON.stringify(this.allState));
-    })
+  onChangeCountry(countryId: any) {
+    console.log('countryId:-- ' + countryId);
+    // this.allStateSubscription = this.authService.fetchState(countryId).subscribe(resData => {
+    //   this.allState = resData;
+    //   console.log('States By country:--' + JSON.stringify(this.allState));
+    // });
   }
   onChangeState(stateId: any) {
-    // console.log('StateId:-- ' +stateId);
+    console.log('StateId:-- ' + stateId);
     // this.allCitySubscription = this.authService.fetchCity(stateId).subscribe(resData => {
     //   this.allCity = resData;
     //   console.log('Cities By state:--' +JSON.stringify(this.allCity));
     // })
   }
   forbiddenNames(control: FormControl): {[s: string]: boolean} {
-    if(this.forbiddenUsernames.indexOf(control.value) !==-1){
-      return {'nameIsForbidden': true};
+    if (this.forbiddenUsernames.indexOf(control.value) !== -1) {
+      return {nameIsForbidden: true};
     }
     return null;
   }
 
   ngOnDestroy() {
-    this.allCountrySubscription.unsubscribe();
-    this.allStateSubscription.unsubscribe();
+    // this.allCountrySubscription.unsubscribe();
+    // this.allStateSubscription.unsubscribe();
     // this.allCitySubscription.unsubscribe();
-    this.allFitnessGroupSubscription.unsubscribe()
+    // this.allFitnessGroupSubscription.unsubscribe();
   }
 }
