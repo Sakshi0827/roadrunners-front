@@ -1,3 +1,8 @@
+.help-block{
+  font-size: smaller;
+  color: red;
+}
+
 /*um-old-styles.css*/
 .um .um-tip:hover,
 .um .um-field-radio.active:not(.um-field-radio-state-disabled) i,
