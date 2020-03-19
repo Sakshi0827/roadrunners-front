@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Subscription } from 'rxjs';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-register',
@@ -21,12 +23,28 @@ export class RegisterComponent implements OnInit {
   // }
 
 
+  allFitnessGroups: any;
+  allFitnessGroupSubscription: Subscription;
+
+  allCountry: any;
+  allCountrySubscription: Subscription;
+  states: any;
+  stateSubscription: Subscription;
+
   // reactive approach
   signupForm: FormGroup;
   forbiddenUsernames = ['a', 'b'];
 
-  constructor() {}
+  constructor(private authService: AuthService) {}
   ngOnInit() {
+    this.allFitnessGroupSubscription = this.authService.fetchFitnessGroup().subscribe(resData => {
+      this.allFitnessGroups = resData;
+      console.log(this.allFitnessGroups);
+    });
+    this.allCountrySubscription = this.authService.fetchCountry().subscribe(resData => {
+      this.allCountry = resData;
+      console.log(this.allCountry);
+    });
     this.signupForm = new FormGroup({
       'firstname' : new FormControl(null, Validators.required),
       'lastname': new FormControl(null),
@@ -41,12 +59,19 @@ export class RegisterComponent implements OnInit {
       'country': new FormControl(null),
       'pincode': new FormControl(null),
       'fitnessgroup': new FormControl(null),
-      'company': new FormControl(null),
+      'company': new FormControl(null)
     });
   }
 
   onSubmit(){
     console.log(this.signupForm);
+  }
+  onChangeCountry(){
+    console.log('countryId');
+    // this.stateSubscription = this.authService.fetchState(countryId).subscribe(resData => {
+    //   this.states = resData;
+    //   console.log(this.states);
+    // })
   }
 
   forbiddenNames(control: FormControl): {[s: string]: boolean} {
